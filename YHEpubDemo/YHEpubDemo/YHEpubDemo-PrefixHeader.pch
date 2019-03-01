@@ -1,0 +1,23 @@
+//
+//  YHEpubDemo-PrefixHeader.pch
+//  YHEpubDemo
+//
+//  Created by survivors on 2019/3/1.
+//  Copyright © 2019年 survivorsfyh. All rights reserved.
+//
+
+#ifndef YHEpubDemo_PrefixHeader_pch
+#define YHEpubDemo_PrefixHeader_pch
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define NSLog(...)
+#endif
+
+#import "XDSReaderHeader.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* YHEpubDemo_PrefixHeader_pch */
